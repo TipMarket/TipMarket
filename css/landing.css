@@ -1,0 +1,132 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald|Open+Sans';
+@font-face {font-family: "Acumin Pro"; src: url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.eot"); src: url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.woff") format("woff"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.ttf") format("truetype")}
+
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin:0;
+    padding: 0;
+}
+
+
+.background-container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: #ffffff;
+    background-image: url("../Resources/background-fabric.png");
+}
+
+/* HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE */
+
+.headline{
+    font-family: "Acumin Pro",sans-serif;
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top:0;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+.logo{
+    width: 100px;
+    position: relative;
+    top:45px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.smallHeadline{
+    font-family: "Acumin Pro", sans-serif;
+    position: relative;
+    top:17vh;
+    left:20%;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.subtext{
+    position: relative;
+    left: 20%;
+    top: 17vh;
+    color: gray;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 1.5em;
+}
+
+/* DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL DUGME I MEJL */
+
+.inputMail{
+    position: relative;
+    height: 4vh;
+    top:30vh;
+    left:32vw;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 20vw;
+    padding-left: 10px;
+}
+
+.buttonMail{
+    position: relative;
+    height: 4.4vh;
+    top:30vh;
+    left:32.5vw;
+    width: 10vw;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonMail:active{
+    background-color: #2b2b2b;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+
+.footerPosition{
+    position: relative;
+    top:54vh;
+}
+
+.footerLine{
+    width: 72%;
+}
+
+.footerText{
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 0.7em;
+    margin-left: 14%;
+}
+
+/* RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE */
+
+@media (max-width: 1060px){
+    .smallHeadline{
+        font-family: "Acumin Pro", sans-serif;
+        position: relative;
+        top:17vh;
+        left:10vw;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    .subtext{
+        position: relative;
+        left: 10vw;
+        top: 17vh;
+        color: gray;
+        font-family: "Acumin Pro", sans-serif;
+        font-size: 1.5em;
+    }
+
+    .footerPosition{
+        top: 50vh;
+    }
+}

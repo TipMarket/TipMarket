@@ -1,0 +1,280 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald|Open+Sans';
+@font-face {font-family: "Acumin Pro"; src: url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.eot"); src: url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.woff") format("woff"), url("//db.onlinewebfonts.com/t/4eea0b56eeb6549def65619b1957eb8d.ttf") format("truetype")}
+
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin:0;
+    padding: 0;
+}
+
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #ffffff;
+    background-image: url("../Resources/background-fabric.png");
+}
+
+/* HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE */
+
+.headline{
+    font-family: "Acumin Pro",sans-serif;
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top:0;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+.logo{
+    width: 100px;
+    position: relative;
+    top:45px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST  LIST */
+
+.listHeadline{
+    position: relative;
+    left: 5.6vw;
+    bottom: 7.6vh;
+    font-family: "Acumin Pro", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.listText{
+    position: relative;
+    left: 5.6vw;
+    bottom: 7.4vh;
+    color: gray;
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 1em;
+}
+
+strike{
+    font-size: 1.1em;
+}
+
+.enum{
+    font-family: "Acumin Pro", sans-serif;
+    text-align: center;
+    border-radius: 100%;
+    background-color: black;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size: 3.25em;
+    margin-top: -1vh;
+}
+
+.listItem{
+    position: relative;
+}
+
+.list{
+    position: relative;
+    top:13vh;
+    left:15vw
+}
+
+/*ARROW*/
+
+.arrow{
+    width: 11em;
+    position: relative;
+    left:52vw;
+    bottom:9vh;
+}
+
+
+/* BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON BUTTON*/
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+    bottom: 45vh;
+    left:24vw;
+}
+
+a {
+    text-decoration: none;
+    width: 271px;
+    line-height: 102px;
+    height: 102px;
+    margin: 3.6em 1.6em 0;
+}
+
+.btn-2 {
+    background: #27ae60; /* nephritis */
+    -webkit-transition: background 225ms ease!important;
+    -moz-transition: background 225ms ease!important;
+    transition: background 225ms ease!important;
+}
+
+.btn-2:before, .btn-2:focus, .btn-2:hover {
+    background: #2ecc71; /* emerald */
+}
+
+.btn-base {
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 225ms ease;
+    border: none;
+    border-radius: 2px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    line-height: 102px;
+}
+
+.btn-cta span {
+    z-index: 8;
+    position: relative;
+}
+
+.btn-cta:before {
+    content: "";
+    display: block;
+    width: 86%;
+    height: 65%;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transition: all 400ms cubic-bezier(.32,1.25,.1,1.47);
+    -moz-transition: all 400ms cubic-bezier(.32,1.25,.1,1.47);
+    transition: all 400ms cubic-bezier(.32,1.25,.1,1.47);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.btn-cta:focus:before, .btn-cta:hover:before {
+    height: 105%;
+    width: 105%;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
+
+.footerPosition{
+    position: relative;
+    bottom: 200px;
+}
+
+.footerLine{
+    width: 72%;
+}
+
+.footerText{
+    font-family: "Acumin Pro", sans-serif;
+    font-size: 0.7em;
+    margin-left: 14%;
+}
+
+
+/* RESPONSIVE HEADLINE RESPONSIVE HEADLINE RESPONSIVE HEADLINE RESPONSIVE HEADLINE RESPONSIVE HEADLINE RESPONSIVE HEADLINE */
+
+@media (max-width: 1017px) {
+    .headline{
+        line-height: 0px;
+        padding-top: 80px;
+    }
+}
+
+/* RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST RESPONSIVE LIST */
+
+@media (max-width: 1500px) {
+    .listHeadline, .listText{
+        margin-left: 0.5vw;
+    }
+}
+
+@media (max-width: 1350px) {
+    .listHeadline, .listText{
+        margin-left: 1.2vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .listHeadline, .listText{
+        margin-left: 2.1vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    .listHeadline, .listText{
+        margin-left: 3.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .listHeadline, .listText{
+        margin-left: 5vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .listHeadline, .listText{
+        margin-left: 6vw;
+    }
+}
+
+/* RESPONSIVE BUTTON RESPONSIVE BUTTON RESPONSIVE BUTTON RESPONSIVE BUTTON RESPONSIVE BUTTON RESPONSIVE BUTTON RESPONSIVE BUTTON */
+
+@media (max-width: 1350px) {
+    .wrapper{
+        float: right;
+        margin-top: 20vh;
+        margin-right: 25%;
+        line-height: 77px;
+    }
+
+    a{
+        width: 203px;
+        height: 77px;
+    }
+
+    .btn-base{
+        line-height: 78px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .wrapper{
+        margin: 0 auto;
+        margin-top: 20vh;
+        margin-right: 25%;
+        line-height: 77px;
+    }
+
+    a{
+        width: 203px;
+        height: 77px;
+    }
+
+    .btn-base{
+        line-height: 78px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .arrow {
+        left:80vh;
+    }
+}
+
+/* RESPONSIVE FOOTER RESPONSIVE FOOTER RESPONSIVE FOOTER RESPONSIVE FOOTER RESPONSIVE FOOTER RESPONSIVE FOOTER RESPONSIVE FOOTER */
